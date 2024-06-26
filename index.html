@@ -15,13 +15,16 @@
     <div class="text-center">
       <h1 class="text-3xl font-bold mb-4">Spinner Wheel</h1>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
-        <div class="flex justify-center items-center flex-col border">
-          <button class="px-3 py-2 text-white font-bold -ml-8 mb-4 bg-blue-800">
+        <div class="flex justify-center items-center flex-col">
+          <button
+            onclick="spin()"
+            class="px-3 py-2 text-white font-bold -ml-8 mb-4 rounded bg-blue-800"
+          >
             Spin it!
           </button>
           <div class="flex justify-center items-center">
             <div class="flex flex-col gap-3">
-              <div class="relative mx-auto">
+              <div class="mx-auto">
                 <canvas
                   id="wheel"
                   width="500"
