@@ -11,16 +11,13 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="flex justify-center items-center h-screen bg-slate-200">
+  <body class="flex justify-center items-center h-screen bg- -200">
     <div class="text-center">
       <h1 class="text-3xl font-bold mb-4">Spinner Wheel</h1>
       <div class="grid grid-cols-2 gap-3">
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center border">
           <div class="flex flex-col gap-3">
-            <div>
-              <button id="btn" onclick="spin()">Spin it!</button>
-            </div>
-            <div class="relative mt-4 mx-auto">
+            <div class="relative mx-auto">
               <canvas
                 id="wheel"
                 width="500"
@@ -52,6 +49,13 @@
               class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
             >
               Add Name
+            </button>
+
+            <button
+              class="bg-[#1f18c8] px-4 py-2 text-white rounded hover:bg-blue-800 transition duration-300"
+              onclick="spin()"
+            >
+              Spin it!
             </button>
           </div>
           <div class="border min-h-24 min-w-44 text-left bg-white font-bold">
