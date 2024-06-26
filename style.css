@@ -11,3 +11,17 @@
   border-bottom: 20px solid transparent;
   border-right: 40px solid rgb(12, 11, 11);
 }
+#btn {
+  background-color: #1f18c8;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
