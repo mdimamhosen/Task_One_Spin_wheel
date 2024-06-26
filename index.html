@@ -15,24 +15,29 @@
     <div class="text-center">
       <h1 class="text-3xl font-bold mb-4">Spinner Wheel</h1>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
-        <div class="flex justify-center items-center">
-          <div class="flex flex-col gap-3">
-            <div class="relative mx-auto">
-              <canvas
-                id="wheel"
-                width="500"
-                height="500"
-                class="rounded-full border-4 border-black bg-white shadow-lg text-white text-center font-bold"
-              >
-              </canvas>
-              <div
-                id="pointer"
-                class="absolute top-1/2 left-1/2 w-0 h-0 border-l-10 border-r-10 border-l-transparent border-r-transparent border-b-30 border-b-red-500 transform -translate-x-1/2 -translate-y-1/2"
-              ></div>
+        <div class="flex justify-center items-center flex-col border">
+          <button class="px-3 py-2 text-white font-bold -ml-8 mb-4 bg-blue-800">
+            Spin it!
+          </button>
+          <div class="flex justify-center items-center">
+            <div class="flex flex-col gap-3">
+              <div class="relative mx-auto">
+                <canvas
+                  id="wheel"
+                  width="500"
+                  height="500"
+                  class="rounded-full border-4 border-black bg-white shadow-lg text-white text-center font-bold"
+                >
+                </canvas>
+                <div
+                  id="pointer"
+                  class="absolute top-1/2 left-1/2 w-0 h-0 border-l-10 border-r-10 border-l-transparent border-r-transparent border-b-30 border-b-red-500 transform -translate-x-1/2 -translate-y-1/2"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="flex justify-center border-black">
-            <div class="triangle-left"></div>
+            <div class="flex justify-center border-black">
+              <div class="triangle-left"></div>
+            </div>
           </div>
         </div>
         <div class="flex flex-col justify-center items-center">
@@ -49,8 +54,6 @@
             >
               Add Name
             </button>
-
-            <button>Spin it!</button>
           </div>
           <div class="border min-h-24 min-w-44 text-left bg-white font-bold">
             <ul id="nameList" class="mt-4 list-none px-4"></ul>
