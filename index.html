@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./wheel.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinner Wheel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="flex justify-center items-center h-screen bg-slate-200">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-4">Spinner Wheel</h1>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col gap-3">
+            <div class="relative mt-4 mx-auto">
+              <canvas
+                id="wheel"
+                width="500"
+                height="500"
+                class="rounded-full border-4 border-black bg-white shadow-lg text-white text-center font-bold"
+              >
+                <h1>imam</h1>
+              </canvas>
+              <div
+                id="pointer"
+                class="absolute top-1/2 left-1/2 w-0 h-0 border-l-10 border-r-10 border-l-transparent border-r-transparent border-b-30 border-b-red-500 transform -translate-x-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+            <div>
+              <button
+                onclick="spin()"
+                class="px-6 py-2 text-lg bg-[#1F18C8] text-white rounded hover:bg-[#130eb6] transition duration-300 ml-2"
+              >
+                Spin it!
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-center border-black">
+            <div class="triangle-left"></div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="mb-4">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Enter a name"
+              class="p-2 border border-gray-300 rounded mb-2"
+            />
+            <button
+              onclick="addName()"
+              class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+            >
+              Add Name
+            </button>
+          </div>
+          <div class="border min-h-24 min-w-44 text-left bg-white font-bold">
+            <ul id="nameList" class="mt-4 list-none px-4"></ul>
+          </div>
+          <div
+            id="winner"
+            class="capitalize bg-black text-white flex justify-center items-center mt-4 rounded-lg"
+          >
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

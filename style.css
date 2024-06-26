@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+/* Custom styles for the triangle */
+.triangle-left {
+  width: 0;
+  height: 0;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 40px solid rgb(12, 11, 11);
+}
